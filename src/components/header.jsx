@@ -8,8 +8,12 @@ class Header extends Component {
 
     handleNavItemClick = () => {
         const navbarCollapse = document.querySelector('.navbar-collapse');
-        if (navbarCollapse.classList.contains('show')) {
-          navbarCollapse.classList.remove('show'); // Menü manuell schließen
+        if (navbarCollapse) {
+          // Bootstrap's collapse method to hide the navbar
+          const bsCollapse = new window.bootstrap.Collapse(navbarCollapse, {
+            toggle: false
+          });
+          bsCollapse.hide(); // Verwendet die Bootstrap-Methode zum Schließen
         }
       }
     render() { 
