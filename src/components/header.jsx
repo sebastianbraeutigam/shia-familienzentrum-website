@@ -6,16 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 class Header extends Component {
     state = {  }
 
-    handleNavItemClick = () => {
-        const navbarCollapse = document.querySelector('.navbar-collapse');
-        if (navbarCollapse) {
-          // Bootstrap's collapse method to hide the navbar
-          const bsCollapse = new window.bootstrap.Collapse(navbarCollapse, {
-            toggle: false
-          });
-          bsCollapse.hide(); // Verwendet die Bootstrap-Methode zum Schließen
-        }
-      }
+    // damit bei einer neu geladenen Seite das menu gescchloss ist, muss im Button className=.navbar-toggler .collapsed drin sein 
     render() { 
         return  <header>
                    <nav className="navbar navbar-expand-md bg-body-tertiary">
