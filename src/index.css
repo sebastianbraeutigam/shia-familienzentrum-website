@@ -21,17 +21,22 @@ main {
     margin-right: auto;
 }
 
+footer {
+    padding-bottom: 15px;
+}
+
 main > h2 {
     margin-bottom: 5%;
 }
 
 footer p {
     font-size: 0.8em;
-    padding-bottom: 20px;
+    margin-bottom: 0;
 }
 
-a {
-    text-decoration: none;
+a.teleNumber {
+    text-decoration: none !important;
+    color: rgb(33 37 41);
 }
 
 @media  screen and (min-width: 320px) and (max-width: 768px) {

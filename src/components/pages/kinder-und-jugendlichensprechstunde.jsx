@@ -15,7 +15,7 @@ class KinderUndJugendlichensprechstunde extends Component {
                         Am besten rufst du mit einem Elternteil an, um einen Termin zu vereinbaren. Geht das nicht, melde dich einfach selbst und mach einen Termin aus. Lass außerdem eine Vertrauensperson wissen, dass du bei uns bist. Du kannst auch jemanden mitbringen, wenn du möchtest.
                     </p>
                     <p>
-                        Ruf uns gerne an: <a href="tel:+493408826062">0340 882 60 62</a>
+                        Ruf uns gerne an: <a className='teleNumber' href="tel:+493408826062"><strong>0340 882 60 62</strong></a>
                     </p>
                 </>;
         

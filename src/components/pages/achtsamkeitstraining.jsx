@@ -23,7 +23,7 @@ class Achtsamkeitstraining extends Component {
                     </p>
                     <p>
                         Klingt das spannend für euch? Dann ruft uns gerne an, um euch. Wir freuen uns auf euch! <br />
-                        <a href="tel:+493408826062">0340 882 60 62</a>
+                        <a className='teleNumber' href="tel:+493408826062"><strong>0340 882 60 62</strong></a>
                     </p>
 
                 </>;
