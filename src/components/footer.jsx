@@ -8,7 +8,7 @@ class Footer extends Component {
     state = {  } 
     render() { 
         return  <footer>
-                    <nav className="navbar navbar-expand-sm bg-body-tertiary">
+                    <nav className="navbar navbar-expand-sm bg-*">
                         <div className="container-fluid">
                           <div className="navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav mx-auto">
@@ -28,7 +28,7 @@ class Footer extends Component {
                           </div>
                         </div>
                     </nav>
-                    <p className="text-center text-muted bg-body-tertiary">&copy; {currentYear} SHIA Familienzentrum. Alle Rechte vorbehalten.</p>
+                    <p className="text-center text-muted bg-*">&copy; {currentYear} SHIA Familienzentrum. Alle Rechte vorbehalten.</p>
                 </footer>;
     }
 }
