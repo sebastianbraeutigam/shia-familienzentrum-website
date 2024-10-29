@@ -24,7 +24,7 @@ class Header extends Component {
                    <nav className="navbar navbar-expand-md bg-*">
                         <div className="container-fluid">
                             <NavLink className="navbar-brand imgTag" to="/">
-                                <img src="/assets/img/Logo_Shia.png" alt="Logo" style={{width: '60%', mixBlendMode: 'multiply', paddigLeft:'0.5em'}} onClick={this.closeMenu}  />
+                                <img src="/assets/img/Logo_Shia.png" alt="Logo" style={{width: '60%', paddigLeft:'0.5em'}} onClick={this.closeMenu}  />
                             </NavLink>
                             <button className={`navbar-toggler ${isMenuOpen ? '' : 'collapsed'}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded={isMenuOpen ? 'true' : 'false'} aria-label="Toggle navigation" onClick={this.toggleMenu}>
                                 <span className="navbar-toggler-icon"></span>
@@ -43,15 +43,15 @@ class Header extends Component {
                                              Angebote &amp; Leistungen
                                         </a>
                                         <ul className="dropdown-menu dropdown-menu-end">
-                                            <li><NavLink className="dropdown-item" to="/angebote/achtsamkeitstraining" onClick={this.closeMenu}>im Überblick</NavLink></li>
+                                            <li><NavLink className="dropdown-item" to="/angebote-leistungen/im-ueberblick" onClick={this.closeMenu}>im Überblick</NavLink></li>
                                             <ul>
-                                                <li><NavLink className="dropdown-item" to="/angebote/achtsamkeitstraining" onClick={this.closeMenu}>Achtsamkeitstraining</NavLink></li>
-                                                <li><NavLink className="dropdown-item" to="/angebote/informations-und-entlastungsgesraeche" onClick={this.closeMenu}>Informations- und Entlastungsgespräche</NavLink></li>
-                                                <li><NavLink className="dropdown-item" to="/angebote/kinder-und-jugendlichensprechstunde" onClick={this.closeMenu}>Kinder- und Jugendlichensprechstunde</NavLink></li>
-                                                <li><NavLink className="dropdown-item" to="/kurse/kinderyoga" onClick={this.closeMenu}>Kinderyoga</NavLink></li>
-                                                <li><NavLink className="dropdown-item" to="/kurse/eltern-kind-gruppe" onClick={this.closeMenu}>Eltern-Kind-Gruppe</NavLink></li>
-                                                <li><NavLink className="dropdown-item" to="/kurse/spielgruppe" onClick={this.closeMenu}>Spielgruppe</NavLink></li>
-                                                <li><NavLink className="dropdown-item" to="/kurse/musikkreis" onClick={this.closeMenu}>Musikkreis</NavLink></li>
+                                                <li><NavLink className="dropdown-item" to="/angebote-leistungen/achtsamkeitstraining" onClick={this.closeMenu}>Achtsamkeitstraining</NavLink></li>
+                                                <li><NavLink className="dropdown-item" to="/angebote-leistungen/informations-und-entlastungsgesraeche" onClick={this.closeMenu}>Informations- und Entlastungsgespräche</NavLink></li>
+                                                <li><NavLink className="dropdown-item" to="/angebote-leistungen/kinder-und-jugendlichensprechstunde" onClick={this.closeMenu}>Kinder- und Jugendlichensprechstunde</NavLink></li>
+                                                <li><NavLink className="dropdown-item" to="/angebote-leistungen/kinderyoga" onClick={this.closeMenu}>Kinderyoga</NavLink></li>
+                                                <li><NavLink className="dropdown-item" to="/angebote-leistungen/eltern-kind-gruppe" onClick={this.closeMenu}>Eltern-Kind-Gruppe</NavLink></li>
+                                                <li><NavLink className="dropdown-item" to="/angebote-leistungen/spielgruppe" onClick={this.closeMenu}>Spielgruppe</NavLink></li>
+                                                <li><NavLink className="dropdown-item" to="/angebote-leistungen/musikkreis" onClick={this.closeMenu}>Musikkreis</NavLink></li>
                                             </ul>
                                         </ul>
                                     </li>

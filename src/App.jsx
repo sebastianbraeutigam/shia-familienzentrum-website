@@ -17,6 +17,7 @@ import KinderUndJugendlichensprechstunde from './components/pages/kinder-und-jug
 import GelbeFeen from './components/pages/gelbe-feen';
 import Oldi from './components/pages/oldi';
 import KleinHilftGroß from './components/pages/klein-hilft-gross';
+import Overview from './components/pages/overview';
 
 
 
@@ -34,16 +35,15 @@ class App extends Component {
                                 <Route path='/privacy' element={<Privacy />}  />
                                 <Route path='/imprint' element={<Imprint />} />
 
-                                {/* alle angebote */}
-                                <Route path='/angebote/achtsamkeitstraining' element={<Achtsamkeitstraining />} />
-                                <Route path='/angebote/informations-und-entlastungsgesraeche' element={<InformationsUndEntlastungsgespraeche />} />
-                                <Route path='/angebote/kinder-und-jugendlichensprechstunde' element={<KinderUndJugendlichensprechstunde />} />
-                                
-                                {/* alle kurse */}
-                                <Route path='/kurse/kinderyoga' element={<Kinderyoga />} />
-                                <Route path='/kurse/eltern-kind-gruppe' element={<ElternKindGruppe />} />
-                                <Route path='/kurse/spielgruppe' element={<Spielgruppe />} />
-                                <Route path='/kurse/musikkreis' element={<Musikkreis />} />
+                                {/* alle angebote + leistungen */}
+                                <Route path='/angebote-leistungen/im-ueberblick' element={<Overview />} />
+                                <Route path='/angebote-leistungen/achtsamkeitstraining' element={<Achtsamkeitstraining />} />
+                                <Route path='/angebote-leistungen/informations-und-entlastungsgesraeche' element={<InformationsUndEntlastungsgespraeche />} />
+                                <Route path='/angebote-leistungen/kinder-und-jugendlichensprechstunde' element={<KinderUndJugendlichensprechstunde />} />
+                                <Route path='/angebote-leistungen/kinderyoga' element={<Kinderyoga />} />
+                                <Route path='/angebote-leistungen/eltern-kind-gruppe' element={<ElternKindGruppe />} />
+                                <Route path='/angebote-leistungen/spielgruppe' element={<Spielgruppe />} />
+                                <Route path='/angebote-leistungen/musikkreis' element={<Musikkreis />} />
                                 
                                 {/* alle projekte */}
                                 <Route path='/projekte/gelbe-feen' element={<GelbeFeen />} />

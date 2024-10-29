@@ -13,6 +13,11 @@
     width: 15%;
 }
 
+
+ul > li {
+    list-style-type: none;
+}
+
 header, nav {
     background-color: #FCDC94;
 }
