@@ -30,11 +30,26 @@ main {
     margin-right: auto;
 }
 
+.overview-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 32px; /* Abstand zwischen den Karten */
+    padding: 20px; /* Innenabstand des Containers */
+}
+
+.card {
+    padding: 15px; /* Innenabstand der Karten */
+    border: 1px solid #ddd; /* Rahmen der Karten */
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schatten für die Karten */
+}
+
 footer, footer > nav {
     background-color: #EF9C66;
 }
 
 footer {
+    padding-top: 15px;
     padding-bottom: 15px;
 }
 
@@ -62,5 +77,9 @@ a.teleNumber {
     
     main {
         width: 100vw;
+    }
+
+    .overview-container{
+        flex-direction: column;
     }
 }
