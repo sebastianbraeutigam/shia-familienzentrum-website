@@ -18,6 +18,8 @@ import GelbeFeen from './components/pages/gelbe-feen';
 import Oldi from './components/pages/oldi';
 import KleinHilftGroß from './components/pages/klein-hilft-gross';
 import Overview from './components/pages/overview';
+import Familiencafe from './components/pages/familiencafe';
+import Cooking from './components/pages/cooking';
 
 
 
@@ -44,6 +46,8 @@ class App extends Component {
                                 <Route path='/angebote-leistungen/eltern-kind-gruppe' element={<ElternKindGruppe />} />
                                 <Route path='/angebote-leistungen/spielgruppe' element={<Spielgruppe />} />
                                 <Route path='/angebote-leistungen/musikkreis' element={<Musikkreis />} />
+                                <Route path='/angebote-leistungen/familiencafe' element={<Familiencafe />} />
+                                <Route path='/angebote-leistungen/cooking' element={<Cooking />} />
                                 
                                 {/* alle projekte */}
                                 <Route path='/projekte/gelbe-feen' element={<GelbeFeen />} />
