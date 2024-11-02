@@ -7,19 +7,19 @@ import About from './components/pages/about';
 import Contact from './components/pages/contact';
 import Privacy from './components/pages/privacy';
 import Imprint from './components/pages/imprint';
-import Kinderyoga from './components/pages/kinderyoga';
-import ElternKindGruppe from './components/pages/eltern-kind-gruppe';
-import Spielgruppe from './components/pages/spielgruppe';
-import Musikkreis from './components/pages/musikkreis';
-import Achtsamkeitstraining from './components/pages/achtsamkeitstraining';
-import InformationsUndEntlastungsgespraeche from './components/pages/informations-und-entlastungsgespraeche';
-import KinderUndJugendlichensprechstunde from './components/pages/kinder-und-jugendlichensprechstunde';
-import GelbeFeen from './components/pages/gelbe-feen';
-import Oldi from './components/pages/oldi';
+import Kinderyoga from './components/pages/angebote-leistungen/kinderyoga';
+import ElternKindGruppe from './components/pages/angebote-leistungen/eltern-kind-gruppe';
+import Spielgruppe from './components/pages/angebote-leistungen/spielgruppe';
+import Musikkreis from './components/pages/angebote-leistungen/musikkreis';
+import Achtsamkeitstraining from './components/pages/angebote-leistungen/achtsamkeitstraining';
+import InformationsUndEntlastungsgespraeche from './components/pages/angebote-leistungen/informations-und-entlastungsgespraeche';
+import KinderUndJugendlichensprechstunde from './components/pages/angebote-leistungen/kinder-und-jugendlichensprechstunde';
+import GelbeFeen from './components/pages/projekte/gelbe-feen';
+import Oldi from './components/pages/projekte/oldi';
 import KleinHilftGroß from './components/pages/klein-hilft-gross';
-import Overview from './components/pages/overview';
-import Familiencafe from './components/pages/familiencafe';
-import Cooking from './components/pages/cooking';
+import Overview from './components/pages/angebote-leistungen/overview';
+import Familiencafe from './components/pages/angebote-leistungen/familiencafe';
+import Cooking from './components/pages/angebote-leistungen/cooking';
 
 
 
