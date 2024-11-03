@@ -20,6 +20,7 @@ import KleinHilftGroß from './components/pages/klein-hilft-gross';
 import Overview from './components/pages/angebote-leistungen/overview';
 import Familiencafe from './components/pages/angebote-leistungen/familiencafe';
 import Cooking from './components/pages/angebote-leistungen/cooking';
+import Umgang from './components/pages/angebote-leistungen/umgang';
 
 
 
@@ -39,6 +40,7 @@ class App extends Component {
 
                                 {/* alle angebote + leistungen */}
                                 <Route path='/angebote-leistungen/im-ueberblick' element={<Overview />} />
+                                <Route path='/angebote-leistungen/umgang' element={<Umgang />} />
                                 <Route path='/angebote-leistungen/achtsamkeitstraining' element={<Achtsamkeitstraining />} />
                                 <Route path='/angebote-leistungen/informations-und-entlastungsgesraeche' element={<InformationsUndEntlastungsgespraeche />} />
                                 <Route path='/angebote-leistungen/kinder-und-jugendlichensprechstunde' element={<KinderUndJugendlichensprechstunde />} />
