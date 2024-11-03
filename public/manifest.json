@@ -1,20 +1,20 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SHIA Dessau",
+  "name": "Website für SHIA Familienzentrum Dessau",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "public/assets/img/favicon.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
+      "src": "lpublic/assets/img/Logo_Shia.png",
+      "type": "image/jpg",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
+      "src": "public/assets/img/Logo_Shia.png",
+      "type": "image/jpg",
       "sizes": "512x512"
     }
   ],
