@@ -16,7 +16,6 @@ class Header extends Component {
         this.setState({ isMenuOpen: false });
       };
 
-    // damit bei einer neu geladenen Seite das menu gescchloss ist, muss im Button className=.navbar-toggler .collapsed drin sein 
     render() { 
         const { isMenuOpen } = this.state;
 
