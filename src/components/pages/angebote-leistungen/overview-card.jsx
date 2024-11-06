@@ -5,7 +5,7 @@ class OverviewCard extends Component {
     state = {  } 
     render() { 
         return  <>
-                    <div className="card" styles={{width: '18rem'}}>
+                    <div className="card">
                         <img src={"/assets/img/"+this.props.image} className="card-img-top" alt={this.props.imageAlt} />
                         <div className="card-body">
                             <h5 className="card-title">{this.props.title}</h5>
