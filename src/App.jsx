@@ -7,7 +7,7 @@ import About from './components/pages/about';
 import Contact from './components/pages/contact';
 import Privacy from './components/pages/privacy';
 import Imprint from './components/pages/imprint';
-import Kinderyoga from './components/pages/angebote-leistungen/kinderyoga';
+/* import Kinderyoga from './components/pages/angebote-leistungen/kinderyoga'; */
 import ElternKindGruppe from './components/pages/angebote-leistungen/eltern-kind-gruppe';
 import Spielgruppe from './components/pages/angebote-leistungen/spielgruppe';
 import Musikkreis from './components/pages/angebote-leistungen/musikkreis';
@@ -44,7 +44,7 @@ class App extends Component {
                                 <Route path='/angebote-leistungen/achtsamkeitstraining' element={<Achtsamkeitstraining />} />
                                 <Route path='/angebote-leistungen/informations-und-entlastungsgesraeche' element={<InformationsUndEntlastungsgespraeche />} />
                                 <Route path='/angebote-leistungen/kinder-und-jugendlichensprechstunde' element={<KinderUndJugendlichensprechstunde />} />
-                                <Route path='/angebote-leistungen/kinderyoga' element={<Kinderyoga />} />
+                                {/*<Route path='/angebote-leistungen/kinderyoga' element={<Kinderyoga />} />*/}
                                 <Route path='/angebote-leistungen/eltern-kind-gruppe' element={<ElternKindGruppe />} />
                                 <Route path='/angebote-leistungen/spielgruppe' element={<Spielgruppe />} />
                                 <Route path='/angebote-leistungen/musikkreis' element={<Musikkreis />} />

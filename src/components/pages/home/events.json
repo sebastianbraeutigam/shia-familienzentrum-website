@@ -4,6 +4,28 @@
         "weekday": "Montag",
         "startTime": "15:00",
         "endTime": "16:00"
-    },{
+    }, {
+        "event": "Yoga",
+        "weekday": "Donnerstag",
+        "startTime": "08:30",
+        "endTime": "09:30"
+    }, {
+        "event": "Spielgruppe",
+        "weekday": "Dienstag",
+        "startTime": "09:30",
+        "endTime": "10:30"
+    }, {
+        "event": "Krabbelgruppe",
+        "weekday": "Dienstag, Mittwoch, Donnerstag",
+        "startTime": "08:15",
+        "endTime": "09:15"
+    }, {
+        "event": "Familien-Cafe",
+        "weekday": "Montag, Dienstag, Mittwoch, Donnerstag, Freitag",
+        "startTime": "15:00"
+    }, {
+        "event": "Gemeinsames Kochen",
+        "weekday": "Freitag",
+        "startTime": "11:00"
     }
 ]
