@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import EventTable from './eventTable';
 
 class Home extends Component {
     state = {  } 
@@ -11,6 +12,7 @@ class Home extends Component {
                         Wir bieten ein breites Spektrum an Angeboten an, um euch in eurem Alltag zu unterstützen <br />
                         und euch die Möglichkeit zu geben, sich mit anderen Familien auszutauschen.
                     </p>
+                    <EventTable />
                 </>;
     }
 }

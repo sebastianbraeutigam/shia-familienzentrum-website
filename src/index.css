@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Modak';
+    src: url('../public/fonts/Modak/Modak-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 #root {
     display: flex;
     flex-direction: column;
@@ -43,8 +51,31 @@ main {
     margin-right: auto;
 }
 
+main > h1 {
+    text-align: center;
+    margin-bottom: 5%;
+    /* font-family: 'Modak'; */
+}
+
 main > h2 {
     margin-bottom: 5%;
+}
+
+.eventTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.eventTable th, .eventTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    word-wrap: break-word; /* Ermöglicht Zeilenumbrüche */
+    white-space: normal; /* Setzt den Standardwert für white-space */
+}
+
+.eventTable th {
+    background-color: #f2f2f2;
+    text-align: left;
 }
 
 .overview-container {
@@ -85,7 +116,8 @@ footer p {
     margin-bottom: 0;
 }
 
-a.teleNumber {
+a.teleNumber,
+td>a{
     text-decoration: none !important;
     color: rgb(33 37 41);
 }

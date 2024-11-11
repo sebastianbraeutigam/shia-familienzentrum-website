@@ -1,31 +1,33 @@
 [
     {
         "event": "Achtsamkeitstraining mit Kindern zwischen 4 bis 10 Jahre",
+        "page": "/angebote-leistungen/achtsamkeitstraining",
         "weekday": "Montag",
-        "startTime": "15:00",
-        "endTime": "16:00"
+        "time": "15:00 bis 16:00"
     }, {
         "event": "Yoga",
+        "page": "",
         "weekday": "Donnerstag",
-        "startTime": "08:30",
-        "endTime": "09:30"
+        "time": "08:30 bis 09:30"
     }, {
         "event": "Spielgruppe",
+        "page": "/angebote-leistungen/spielgruppe",
         "weekday": "Dienstag",
-        "startTime": "09:30",
-        "endTime": "10:30"
+        "time": "09:30 bis 10:30"
     }, {
         "event": "Krabbelgruppe",
+        "page": "",
         "weekday": "Dienstag, Mittwoch, Donnerstag",
-        "startTime": "08:15",
-        "endTime": "09:15"
+        "time": "08:15 bis 09:15"
     }, {
         "event": "Familien-Cafe",
+        "page": "/angebote-leistungen/familiencafe",
         "weekday": "Montag, Dienstag, Mittwoch, Donnerstag, Freitag",
-        "startTime": "15:00"
+        "time": "ab 15:00"
     }, {
         "event": "Gemeinsames Kochen",
-        "weekday": "Freitag",
-        "startTime": "11:00"
+        "page": "/angebote-leistungen/cooking",
+        "weekday": "jeden letzten Freitag im Monat",
+        "time": "ab 11:00"
     }
 ]
