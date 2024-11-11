@@ -1,0 +1,28 @@
+footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.custom-btn {
+    position: relative;
+    color: #EF9C66  !important;
+    border: 2px solid #EF9C66 !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-btn:hover {
+    background-color: #ef9d66ca !important; /* Ändere die Hintergrundfarbe beim Hover */
+    color: white !important; /* Ändere die Textfarbe beim Hover */
+}
+
+footer p {
+    font-size: 0.8em;
+    margin-bottom: 0;
+}
+
+a.teleNumber,
+td>a{
+    text-decoration: none !important;
+    color: rgb(33 37 41);
+}

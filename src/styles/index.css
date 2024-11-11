@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Modak';
-    src: url('../public/fonts/Modak/Modak-Regular.ttf') format('truetype');
+    src: url('../../public/fonts/Modak/Modak-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,30 +11,6 @@
     flex-direction: column;
     min-height: 100vh;
 } 
-
-.navbar {
-    padding-left: 3vw !important;
-    padding-right: 3vw !important;
-}
-
-nav a, 
-footer p{
-    color: #EF9C66 !important; 
-}
-
-
-
-.imgTag {
-    width: 15%;
-}
-
-header .nav-link {
-    font-size: 1.2rem;
-}
-
-ul > li {
-    list-style-type: none;
-}
 
 header, 
 nav,
@@ -61,23 +37,6 @@ main > h2 {
     margin-bottom: 5%;
 }
 
-.eventTable {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.eventTable th, .eventTable td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    word-wrap: break-word; /* Ermöglicht Zeilenumbrüche */
-    white-space: normal; /* Setzt den Standardwert für white-space */
-}
-
-.eventTable th {
-    background-color: #f2f2f2;
-    text-align: left;
-}
-
 .overview-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -91,35 +50,6 @@ main > h2 {
     border: 1px solid #ddd; /* Rahmen der Karten */
     border-radius: 8px; /* Abgerundete Ecken */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schatten für die Karten */
-}
-
-footer {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.custom-btn {
-    position: relative;
-    color: #EF9C66  !important;
-    border: 2px solid #EF9C66 !important;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.custom-btn:hover {
-    background-color: #ef9d66ca !important; /* Ändere die Hintergrundfarbe beim Hover */
-    color: white !important; /* Ändere die Textfarbe beim Hover */
-}
-
-footer p {
-    font-size: 0.8em;
-    margin-bottom: 0;
-}
-
-a.teleNumber,
-td>a{
-    text-decoration: none !important;
-    color: rgb(33 37 41);
 }
 
 @media  screen and (min-width: 320px) and (max-width: 768px) {
