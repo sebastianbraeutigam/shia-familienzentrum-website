@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import EventTable from './eventTable';
+import './home.css';
 
 class Home extends Component {
     state = {  } 
@@ -14,7 +15,16 @@ class Home extends Component {
                         Wir bieten ein breites Spektrum an Angeboten an, um euch in eurem Alltag zu unterstützen <br />
                         und euch die Möglichkeit zu geben, sich mit anderen Familien auszutauschen.
                     </p>
+                    <p>
+                        Unsere Angebote:
+                    </p>
                     <EventTable />
+                    <p>
+                        Das SHIA Familienzentrum lädt Euch herzlich ein, uns kennenzulernen und unsere Angebote in Anspruch zu nehmen.
+                    </p>
+                    <p>
+                        <strong>Wir freuen uns auf euch!</strong>
+                    </p>
                 </>;
     }
 }
