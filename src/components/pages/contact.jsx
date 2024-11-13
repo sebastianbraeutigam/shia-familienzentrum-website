@@ -16,11 +16,11 @@ class Contact extends Component {
                 <h2>Kontakt</h2>
                 <div className="addressContainer">
                     <div className="adressDiv">
-                        <p><strong>SHIA Familienzentrum</strong></p>
+                        <h5><strong>SHIA Familienzentrum</strong></h5>
                         <p>Wörlitzer Straße 69</p>
                         <p>06844 Dessau-Roßlau</p>
-                        <p>Telefon: <a href="tel:+493406616969">0340 661 69 69</a></p>
-                        <p>E-Mail: <a href="mailto:info@shia-dessau.de">info@shia-dessau.de</a></p> 
+                        <p className='telephone'>Telefon: <a href="tel:+493406616969">0340 661 69 69</a></p>
+                        <p className='email'>E-Mail: <a href="mailto:info@shia-dessau.de">info@shia-dessau.de</a></p> 
                     </div>
                     <div className="addressCard">
                         {this.state.loadIframe && (
