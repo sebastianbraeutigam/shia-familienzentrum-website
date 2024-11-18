@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import events from '../../../data/events.json';
 import { NavLink } from 'react-router-dom';
 import './EventTable.css';
+import '../../../styles/index.css';
 
 class EventTable extends Component {
     state = {  } 
@@ -35,7 +36,7 @@ class EventTable extends Component {
                     <tbody>
                         {sortedEvents.map((event, index) => (
                             <tr key={`${event.id}-${index}`}>
-                                <td><NavLink to={event.page}>{event.event}</NavLink></td>
+                                <td><NavLink className='bold' to={event.page}>{event.event}</NavLink></td>
                                 <td>{event.weekday}</td>
                                 <td>{event.time}</td>
                             </tr>

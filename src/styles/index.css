@@ -37,6 +37,10 @@ main > h2 {
     margin-bottom: 5%;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .introductionHome,
 .introductionText {
     text-align: center;
