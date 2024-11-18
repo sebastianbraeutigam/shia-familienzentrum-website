@@ -1,39 +1,82 @@
 [
     {
         "id": "1",
-        "event": "Achtsamkeitstraining mit Kindern zwischen 4 bis 10 Jahre",
-        "page": "/angebote-leistungen/achtsamkeitstraining",
-        "weekday": "Montag",
-        "time": "15:00 bis 16:00"
-    }, {
-        "id": "2",
         "event": "Yoga",
-        "page": "",
-        "weekday": "Donnerstag",
-        "time": "08:45 bis 09:45"
-    }, {
-        "id": "3",
+        "page": "/angebote-leistungen/yoga",
+        "schedule": [
+            {
+                "weekday": "Montag",
+                "time": "08:45 bis 09:30"
+            }
+        ]
+    },    
+    {
+        "id": "2",
         "event": "Spielgruppe",
         "page": "/angebote-leistungen/spielgruppe",
-        "weekday": "Dienstag",
-        "time": "09:30 bis 10:30"
-    }, {
-        "id": "4",
+        "schedule": [
+            {
+                "weekday": "Dienstag",
+                "time": "09:30 bis 10:30"
+            }
+        ]
+    },
+    {
+        "id": "3",
         "event": "Krabbelgruppe",
         "page": "",
-        "weekday": "Montag, Donnerstag",
-        "time": "08:15 bis 09:15"
-    }, {
-        "id": "5",
+        "schedule": [
+            {
+                "weekday": "Dienstag",
+                "time": "09:15 bis 10:15"
+            },
+            {
+                "weekday": "Donnerstag",
+                "time": "09:30 bis 10:30"
+            }
+        ]
+    },
+    {
+        "id": "4",
         "event": "Familien-Cafe",
         "page": "/angebote-leistungen/familiencafe",
-        "weekday": "der letzte Montag im Monat",
-        "time": "ab 15:00"
-    }, {
-        "id": "6",
-        "event": "Gemeinsames Kochen",
+        "schedule": [
+            {
+                "weekday": "der letzte Montag im Monat",
+                "time": "ab 15:00"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "event": "Gemeinsames Kochen ab 2025",
         "page": "/angebote-leistungen/cooking",
-        "weekday": "jeden letzten Freitag im Monat",
-        "time": "ab 11:00"
+        "schedule": [
+            {
+        
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "event": "Musikgruppe Musimini",
+        "page": "/angebote-leistungen/musikkreis",
+        "schedule": [
+            {
+                "weekday": "Mittwoch",
+                "time": "09:30 bis 10:30"
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "event": "Musikgruppe",
+        "page": "/angebote-leistungen/musikkreis",
+        "schedule": [
+            {
+                "weekday": "Freitag",
+                "time": "08:30 bis 09:30"
+            }
+        ]
     }
 ]
