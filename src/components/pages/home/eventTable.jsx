@@ -11,11 +11,11 @@ class EventTable extends Component {
     sortEventsByWeekday(events) {
         const weekdays = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"];
         return events.flatMap(event => 
-            event.schedule.map(scheduleItem => ({
+            event.schedule.map((scheduleItem, index) => ({
                 ...scheduleItem,
                 event: event.event,
                 page: event.page,
-                id: event.id
+                id: `${event.id}-${index}` // Eindeutige ID generieren
             }))
         ).sort((a, b) => weekdays.indexOf(a.weekday) - weekdays.indexOf(b.weekday));
     }
@@ -35,7 +35,7 @@ class EventTable extends Component {
                     </thead>
                     <tbody>
                         {sortedEvents.map((event, index) => (
-                            <tr key={`${event.id}-${index}`}>
+                            <tr key={event.id}>
                                 <td><NavLink className='bold' to={event.page}>{event.event}</NavLink></td>
                                 <td>{event.weekday}</td>
                                 <td>{event.time}</td>
