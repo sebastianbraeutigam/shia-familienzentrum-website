@@ -15,7 +15,7 @@ class EventTable extends Component {
                 ...scheduleItem,
                 event: event.event,
                 page: event.page,
-                id: `${event.id}-${index}` // Eindeutige ID generieren
+                id: `${event.id}-${index}`
             }))
         ).sort((a, b) => weekdays.indexOf(a.weekday) - weekdays.indexOf(b.weekday));
     }
