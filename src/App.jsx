@@ -39,7 +39,7 @@ class App extends Component {
                                 <Route path='/imprint' element={<Imprint />} />
 
                                 {/* alle angebote + leistungen */}
-                                <Route path='/angebote-leistungen/im-ueberblick' element={<Overview />} />
+                                <Route path='/angebote-leistungen/ueberblick' element={<Overview />} />
                                 <Route path='/angebote-leistungen/umgang' element={<Umgang />} />
                                 <Route path='/angebote-leistungen/achtsamkeitstraining' element={<Achtsamkeitstraining />} />
                                 <Route path='/angebote-leistungen/informations-und-entlastungsgesraeche' element={<InformationsUndEntlastungsgespraeche />} />

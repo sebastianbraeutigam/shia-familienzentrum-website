@@ -8,8 +8,19 @@ header {
 }
 
 nav a, 
+nav button, 
 footer p{
     color: #EF9C66 !important; 
+}
+
+.dropdown-item:hover{
+    background-color: #EF9C66 !important;
+    color: white !important;
+}
+
+.dropdown-item.active{
+    background-color: #C8CFA0 !important;
+    color: white !important;
 }
 
 
