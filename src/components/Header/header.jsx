@@ -79,6 +79,7 @@ class Header extends Component {
                                     <ul className={`dropdown-menu dropdown-menu-end ${projectsIsHovered ? 'show' : ''}`}>
                                         <li><NavLink className="dropdown-item" to="/projekte/gelbe-feen" onClick={this.closeMenu}>gelbe Feen</NavLink></li>
                                         <li><NavLink className="dropdown-item" to="/projekte/oldi" onClick={this.closeMenu}>OLdi</NavLink></li>
+                                        <li><NavLink className="dropdown-item" to="/projekte/klein-hilft-gross" onClick={this.closeMenu}>Klein hiflt Groß</NavLink></li>
                                     </ul>
                                 </li>
                             </ul>
