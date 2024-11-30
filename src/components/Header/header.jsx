@@ -66,7 +66,7 @@ class Header extends Component {
                                         <li><NavLink className="dropdown-item" to="/angebote-leistungen/achtsamkeitstraining" onClick={this.closeMenu}>Achtsamkeitstraining</NavLink></li>
                                         <li><NavLink className="dropdown-item" to="/angebote-leistungen/informations-und-entlastungsgesraeche" onClick={this.closeMenu}>Informations- und Entlastungsgespräche</NavLink></li>
                                         <li><NavLink className="dropdown-item" to="/angebote-leistungen/kinder-und-jugendlichensprechstunde" onClick={this.closeMenu}>Kinder- und Jugendlichensprechstunde</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/angebote-leistungen/kinderyoga" onClick={this.closeMenu}>Kinderyoga</NavLink></li>
+                                        {/* <li><NavLink className="dropdown-item" to="/angebote-leistungen/kinderyoga" onClick={this.closeMenu}>Kinderyoga</NavLink></li> */}
                                         <li><NavLink className="dropdown-item" to="/angebote-leistungen/eltern-kind-gruppe" onClick={this.closeMenu}>Eltern-Kind-Gruppe</NavLink></li>
                                         <li><NavLink className="dropdown-item" to="/angebote-leistungen/spielgruppe" onClick={this.closeMenu}>Spielgruppe</NavLink></li>
                                         <li><NavLink className="dropdown-item" to="/angebote-leistungen/musikkreis" onClick={this.closeMenu}>Musikkreis</NavLink></li>
