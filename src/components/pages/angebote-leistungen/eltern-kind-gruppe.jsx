@@ -13,7 +13,7 @@ class ElternKindGruppe extends Component {
                     </p>
                     <p>
                         Meldet euch gern unter: 
-                        <a className='teleNumber' href="tel:+493408826062"><strong>0340 882 60 62</strong></a>
+                        <a className='teleNumber' href="tel:+493408826062"><strong> 0340 882 60 62</strong></a>
                     </p>
                 </>;
     }
