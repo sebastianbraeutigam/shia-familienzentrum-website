@@ -7,7 +7,21 @@ class Contact extends Component {
     };
 
     componentDidMount() {
-        this.setState({ loadIframe: true });
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        this.setState({ loadIframe: true });
+                        observer.disconnect();
+                    }
+                });
+            });
+
+            observer.observe(this.iframeContainer);
+        } else {
+            // Fallback für Browser, die IntersectionObserver nicht unterstützen
+            this.setState({ loadIframe: true });
+        }
     }
 
     render() { 
@@ -22,7 +36,7 @@ class Contact extends Component {
                         <p className='telephone'>Telefon: <a href="tel:+493406616969">0340 661 69 69</a></p>
                         <p className='email'>E-Mail: <a href="mailto:info@shia-dessau.de">info@shia-dessau.de</a></p> 
                     </div>
-                    <div className="addressCard">
+                    <div className="addressCard" ref={el => this.iframeContainer = el}>
                         {this.state.loadIframe && (
                             <iframe
                                 className='mapsIframe'

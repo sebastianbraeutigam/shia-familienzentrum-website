@@ -7,7 +7,8 @@ class Header extends Component {
         super(props);
         this.state = {
             isMenuOpen: false,
-            isHovered: false
+            angeboteIsHovered: false,
+            projectsIsHovered: false
         };
     }
 
@@ -19,25 +20,47 @@ class Header extends Component {
         this.setState({ isMenuOpen: false });
     }
 
-    handleMouseEnterAngebote = () => {
-        this.setState({ angeboteIsHovered: true });
+    handleMouseEnter = (menu) => {
+        this.setState({ [menu]: true });
     }
 
-    handleMouseLeaveAngebote = () => {
-        this.setState({ angeboteIsHovered: false });
+    handleMouseLeave = (menu) => {
+        this.setState({ [menu]: false });
     }
 
-    handleMouseEnterProjects = () => {
-        this.setState({ projectsIsHovered: true });
+    renderDropdownMenu = (menu, items) => {
+        const isHovered = this.state[menu];
+        return (
+            <li className={`nav-item dropdown ${isHovered ? 'show' : ''}`} onMouseEnter={() => this.handleMouseEnter(menu)} onMouseLeave={() => this.handleMouseLeave(menu)}>
+                <button className="nav-link dropdown-toggle" type="button" aria-expanded={isHovered}>
+                    {menu === 'angeboteIsHovered' ? 'Angebote & Leistungen' : 'Projekte'}
+                </button>
+                <ul className={`dropdown-menu dropdown-menu-end ${isHovered ? 'show' : ''}`}>
+                    {items.map((item, index) => (
+                        <li key={index}><NavLink className="dropdown-item" to={item.path} onClick={this.closeMenu}>{item.label}</NavLink></li>
+                    ))}
+                </ul>
+            </li>
+        );
     }
-
-    handleMouseLeaveProjects = () => {
-        this.setState({ projectsIsHovered: false });
-    }
-
 
     render() {
-        const { isMenuOpen, angeboteIsHovered, projectsIsHovered } = this.state;
+        const { isMenuOpen } = this.state;
+
+        const angeboteItems = [
+            { path: '/angebote-leistungen/achtsamkeitstraining', label: 'Achtsamkeitstraining' },
+            { path: '/angebote-leistungen/informations-und-entlastungsgesraeche', label: 'Informations- und Entlastungsgespräche' },
+            { path: '/angebote-leistungen/kinder-und-jugendlichensprechstunde', label: 'Kinder- und Jugendlichensprechstunde' },
+            { path: '/angebote-leistungen/eltern-kind-gruppe', label: 'Eltern-Kind-Gruppe' },
+            { path: '/angebote-leistungen/spielgruppe', label: 'Spielgruppe' },
+            { path: '/angebote-leistungen/musikkreis', label: 'Musikkreis' }
+        ];
+
+        const projectsItems = [
+            { path: '/projekte/gelbe-feen', label: 'gelbe Feen' },
+            { path: '/projekte/oldi', label: 'OLdi' },
+            { path: '/projekte/klein-hilft-gross', label: 'Klein hilft Groß' }
+        ];
 
         return (
             <header>
@@ -58,30 +81,8 @@ class Header extends Component {
                                 <li className="nav-item" style={{whiteSpace: 'nowrap'}}>
                                     <NavLink className="nav-link" to="/about" onClick={this.closeMenu}>Über uns</NavLink>
                                 </li>
-                                <li className={`nav-item dropdown ${angeboteIsHovered ? 'show' : ''}`} onMouseEnter={this.handleMouseEnterAngebote} onMouseLeave={this.handleMouseLeaveAngebote}>
-                                    <NavLink className="nav-link dropdown-toggle" type="button" aria-expanded={angeboteIsHovered} to="/angebote-leistungen/ueberblick" onClick={this.closeMenu}>
-                                        Angebote &amp; Leistungen
-                                    </NavLink>
-                                    <ul className={`dropdown-menu dropdown-menu-end ${angeboteIsHovered ? 'show' : ''}`}>
-                                        <li><NavLink className="dropdown-item" to="/angebote-leistungen/achtsamkeitstraining" onClick={this.closeMenu}>Achtsamkeitstraining</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/angebote-leistungen/informations-und-entlastungsgesraeche" onClick={this.closeMenu}>Informations- und Entlastungsgespräche</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/angebote-leistungen/kinder-und-jugendlichensprechstunde" onClick={this.closeMenu}>Kinder- und Jugendlichensprechstunde</NavLink></li>
-                                        {/* <li><NavLink className="dropdown-item" to="/angebote-leistungen/kinderyoga" onClick={this.closeMenu}>Kinderyoga</NavLink></li> */}
-                                        <li><NavLink className="dropdown-item" to="/angebote-leistungen/eltern-kind-gruppe" onClick={this.closeMenu}>Eltern-Kind-Gruppe</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/angebote-leistungen/spielgruppe" onClick={this.closeMenu}>Spielgruppe</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/angebote-leistungen/musikkreis" onClick={this.closeMenu}>Musikkreis</NavLink></li>
-                                    </ul>
-                                </li>
-                                <li className={`nav-item dropdown ${projectsIsHovered ? 'show' : ''}`} onMouseEnter={this.handleMouseEnterProjects} onMouseLeave={this.handleMouseLeaveProjects}>
-                                    <button className="nav-link dropdown-toggle" type="button" aria-expanded={projectsIsHovered}>
-                                        Projekte
-                                    </button>
-                                    <ul className={`dropdown-menu dropdown-menu-end ${projectsIsHovered ? 'show' : ''}`}>
-                                        <li><NavLink className="dropdown-item" to="/projekte/gelbe-feen" onClick={this.closeMenu}>gelbe Feen</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/projekte/oldi" onClick={this.closeMenu}>OLdi</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/projekte/klein-hilft-gross" onClick={this.closeMenu}>Klein hiflt Groß</NavLink></li>
-                                    </ul>
-                                </li>
+                                {this.renderDropdownMenu('angeboteIsHovered', angeboteItems)}
+                                {this.renderDropdownMenu('projectsIsHovered', projectsItems)}
                             </ul>
                         </div>
                     </div>
