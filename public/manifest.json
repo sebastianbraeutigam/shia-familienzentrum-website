@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "lpublic/assets/img/Logo_Shia.png",
+      "src": "public/assets/img/logo_shia.png",
       "type": "image/jpg",
       "sizes": "192x192"
     },
     {
-      "src": "public/assets/img/Logo_Shia.png",
+      "src": "public/assets/img/logo_shia.png",
       "type": "image/jpg",
       "sizes": "512x512"
     }
