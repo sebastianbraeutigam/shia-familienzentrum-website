@@ -16,7 +16,7 @@ import InformationsUndEntlastungsgespraeche from './components/pages/angebote-le
 import KinderUndJugendlichensprechstunde from './components/pages/angebote-leistungen/kinder-und-jugendlichensprechstunde';
 import GelbeFeen from './components/pages/projekte/gelbe-feen';
 import Oldi from './components/pages/projekte/oldi';
-import KleinHilftGroß from './components/pages/klein-hilft-gross';
+import KleinHilftGroß from './components/pages/projekte/klein-hilft-gross';
 import Overview from './components/pages/angebote-leistungen/overview';
 import Familiencafe from './components/pages/angebote-leistungen/familiencafe';
 import Cooking from './components/pages/angebote-leistungen/cooking';
