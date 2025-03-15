@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import events from '../../../data/events.json';
 import { NavLink } from 'react-router-dom';
 import './EventTable.css';
-import '../../../styles/index.css';
 
 class EventTable extends Component {
     state = {  } 
