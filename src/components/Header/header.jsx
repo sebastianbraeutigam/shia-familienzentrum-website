@@ -67,7 +67,7 @@ class Header extends Component {
                 <nav className="navbar navbar-expand-md bg-*">
                     <div className="container-fluid">
                         <NavLink className="navbar-brand imgTag" to="/">
-                            <img src="/assets/img/logo_shia.png" alt="Shia Logo" style={{width: '60%', paddingLeft:'0.5em'}} onClick={this.closeMenu} />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/logo_shia.png`} alt="Shia Logo" style={{width: '60%', paddingLeft:'0.5em'}} onClick={this.closeMenu} />
                         </NavLink>
                         <button className={`navbar-toggler ${isMenuOpen ? '' : 'collapsed'}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded={isMenuOpen ? 'true' : 'false'} aria-label="Toggle navigation" onClick={this.toggleMenu}>
                             <span className="navbar-toggler-icon"></span>
