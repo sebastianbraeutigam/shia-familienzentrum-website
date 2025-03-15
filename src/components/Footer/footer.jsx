@@ -36,7 +36,7 @@ class Footer extends Component {
 
     renderNavLink = (path, label) => (
         <li className="nav-item">
-            <NavLink className="nav-link" to={path}>{label}</NavLink>
+            <NavLink className="nav-link navlink" to={path}>{label}</NavLink>
         </li>
     );
 

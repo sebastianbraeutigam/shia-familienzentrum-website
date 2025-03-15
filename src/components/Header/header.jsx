@@ -67,7 +67,7 @@ class Header extends Component {
                 <nav className="navbar navbar-expand-md bg-*">
                     <div className="container-fluid">
                         <NavLink className="navbar-brand imgTag" to="/">
-                            <img src={`${process.env.PUBLIC_URL}/assets/img/logo_shia.png`} alt="Shia Logo" style={{width: '60%', paddingLeft:'0.5em'}} onClick={this.closeMenu} />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/logo_shia.png`} alt="Shia Logo" onClick={this.closeMenu} />
                         </NavLink>
                         <button className={`navbar-toggler ${isMenuOpen ? '' : 'collapsed'}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded={isMenuOpen ? 'true' : 'false'} aria-label="Toggle navigation" onClick={this.toggleMenu}>
                             <span className="navbar-toggler-icon"></span>
@@ -76,10 +76,10 @@ class Header extends Component {
                         <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/" onClick={this.closeMenu}>Home</NavLink>
+                                    <NavLink className="nav-link navlink" to="/" onClick={this.closeMenu}>Home</NavLink>
                                 </li>
                                 <li className="nav-item" style={{whiteSpace: 'nowrap'}}>
-                                    <NavLink className="nav-link" to="/about" onClick={this.closeMenu}>Über uns</NavLink>
+                                    <NavLink className="nav-link navlink" to="/about" onClick={this.closeMenu}>Über uns</NavLink>
                                 </li>
                                 {this.renderDropdownMenu('angeboteIsHovered', angeboteItems)}
                                 {this.renderDropdownMenu('projectsIsHovered', projectsItems)}

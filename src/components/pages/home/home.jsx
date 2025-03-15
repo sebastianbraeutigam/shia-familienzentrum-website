@@ -16,18 +16,20 @@ class Home extends Component {
                     Wir bieten ein breites Spektrum an Angeboten an, um euch in eurem Alltag zu unterstützen <br />
                     und euch die Möglichkeit zu geben, sich mit anderen Familien auszutauschen.
                 </p>
-                <p>Unsere Angebote:</p>
-                <EventTable />
                 <p>
+                    <strong>Unsere Angebote:</strong>
+                </p>
+                <EventTable />
+                <p className='center-text'>
                     Das SHIA Familienzentrum lädt Euch herzlich ein, uns kennenzulernen und unsere Angebote in Anspruch zu nehmen.
                 </p>
                 <br />
-                <p>
+                <p className='center-text'>
                     Alle weiteren Angebote findet ihr <NavLink to="/angebote-leistungen/ueberblick" className="link">hier im Überblick</NavLink>!
                 </p>
                 <br />
-                <p>
-                    <strong>Wir freuen uns auf euch!</strong>
+                <p className='center-text'>
+                    <strong>Wir freuen uns auf euch!</strong> 
                 </p>
             </>
         );

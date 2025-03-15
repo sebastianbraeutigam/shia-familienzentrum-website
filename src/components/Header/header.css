@@ -23,10 +23,16 @@ footer p{
     color: white !important;
 }
 
-
-
 .imgTag {
     width: 15%;
+}
+
+.navbar-brand img {
+    min-width: 100px;
+    max-width: 60%;
+    width: 250px;
+    padding-left: 0.5em;
+
 }
 
 header .nav-link {
@@ -35,4 +41,11 @@ header .nav-link {
 
 ul > li {
     list-style-type: none;
+}
+.navlink:hover {
+    text-decoration: underline;
+}
+
+.navlink:active {
+    text-decoration: underline;
 }

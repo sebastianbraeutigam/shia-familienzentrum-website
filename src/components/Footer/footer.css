@@ -13,8 +13,8 @@ footer {
 }
 
 .custom-btn:hover {
-    background-color: #ef9d66ca !important; /* Ändere die Hintergrundfarbe beim Hover */
-    color: white !important; /* Ändere die Textfarbe beim Hover */
+    background-color: #ef9d66ca !important; 
+    color: white !important;
 }
 
 footer p {
@@ -26,4 +26,8 @@ a.teleNumber,
 td>a{
     text-decoration: none !important;
     color: rgb(33 37 41);
+}
+
+.navlink:hover {
+    text-decoration: underline;
 }
