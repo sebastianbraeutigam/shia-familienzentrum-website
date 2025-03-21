@@ -30,33 +30,33 @@ class App extends Component {
         return      <>
                         <Header />
                         <main>
-                            <Routes>
+                            <BrowserRouter basename="/shia-familienzentrum-website">
+                            
+                                <Routes>
 
-                                <Route path='/' element={<Home />} />
-                                <Route path='/about' element={<About />} />
-                                <Route path='/contact' element={<Contact />} />
-                                <Route path='/privacy' element={<Privacy />}  />
-                                <Route path='/imprint' element={<Imprint />} />
+                                    <Route path='/' element={<Home />} />
+                                    <Route path='/about' element={<About />} />
+                                    <Route path='/contact' element={<Contact />} />
+                                    <Route path='/privacy' element={<Privacy />}  />
+                                    <Route path='/imprint' element={<Imprint />} />
 
-                                {/* alle angebote + leistungen */}
-                                <Route path='/angebote-leistungen/ueberblick' element={<Overview />} />
-                                <Route path='/angebote-leistungen/umgang' element={<Umgang />} />
-                                <Route path='/angebote-leistungen/achtsamkeitstraining' element={<Achtsamkeitstraining />} />
-                                <Route path='/angebote-leistungen/informations-und-entlastungsgesraeche' element={<InformationsUndEntlastungsgespraeche />} />
-                                <Route path='/angebote-leistungen/kinder-und-jugendlichensprechstunde' element={<KinderUndJugendlichensprechstunde />} />
-                                {/*<Route path='/angebote-leistungen/kinderyoga' element={<Kinderyoga />} />*/}
-                                <Route path='/angebote-leistungen/eltern-kind-gruppe' element={<ElternKindGruppe />} />
-                                <Route path='/angebote-leistungen/spielgruppe' element={<Spielgruppe />} />
-                                <Route path='/angebote-leistungen/musikkreis' element={<Musikkreis />} />
-                                <Route path='/angebote-leistungen/familiencafe' element={<Familiencafe />} />
-                                <Route path='/angebote-leistungen/cooking' element={<Cooking />} />
-                                
-                                {/* alle projekte */}
-                                <Route path='/projekte/gelbe-feen' element={<GelbeFeen />} />
-                                <Route path='/projekte/oldi' element={<Oldi />} />
-                                <Route path='/projekte/klein-hilft-gross' element={<KleinHilftGroß />} />
+                                    <Route path='/angebote-leistungen/ueberblick' element={<Overview />} />
+                                    <Route path='/angebote-leistungen/umgang' element={<Umgang />} />
+                                    <Route path='/angebote-leistungen/achtsamkeitstraining' element={<Achtsamkeitstraining />} />
+                                    <Route path='/angebote-leistungen/informations-und-entlastungsgesraeche' element={<InformationsUndEntlastungsgespraeche />} />
+                                    <Route path='/angebote-leistungen/kinder-und-jugendlichensprechstunde' element={<KinderUndJugendlichensprechstunde />} />
+                                    <Route path='/angebote-leistungen/eltern-kind-gruppe' element={<ElternKindGruppe />} />
+                                    <Route path='/angebote-leistungen/spielgruppe' element={<Spielgruppe />} />
+                                    <Route path='/angebote-leistungen/musikkreis' element={<Musikkreis />} />
+                                    <Route path='/angebote-leistungen/familiencafe' element={<Familiencafe />} />
+                                    <Route path='/angebote-leistungen/cooking' element={<Cooking />} />
 
-                            </Routes>
+                                    <Route path='/projekte/gelbe-feen' element={<GelbeFeen />} />
+                                    <Route path='/projekte/oldi' element={<Oldi />} />
+                                    <Route path='/projekte/klein-hilft-gross' element={<KleinHilftGroß />} />
+
+                                </Routes>
+                            </BrowserRouter>
                         </main>
                         <Footer />
                     </>;
