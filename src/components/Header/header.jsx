@@ -31,7 +31,7 @@ class Header extends Component {
     renderDropdownMenu = (menu, items) => {
         const isHovered = this.state[menu];
         return (
-            <li className={`nav-item dropdown ${isHovered ? 'show' : ''}`} onMouseEnter={() => this.handleMouseEnter(menu)} onMouseLeave={() => this.handleMouseLeave(menu)} onClick={this.closeMenu}>
+            <li className={`nav-item dropdown ${isHovered ? 'show' : ''}`} onMouseEnter={() => this.handleMouseEnter(menu)} onMouseLeave={() => this.handleMouseLeave(menu)}>
                 <button className="nav-link dropdown-toggle" type="button" aria-expanded={isHovered}>
                     {menu === 'angeboteIsHovered' ? 'Angebote & Leistungen' : 'Projekte'}
                 </button>
