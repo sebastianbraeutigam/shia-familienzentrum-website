@@ -43,7 +43,7 @@ const Header = () => {
                 <button className="nav-link dropdown-toggle" type="button" aria-expanded={isHovered}>
                     {menu === 'angebote' ? 'Angebote & Leistungen' : 'Projekte'}
                 </button>
-                <ul className={`dropdown-menu dropdown-menu-end ${isHovered ? 'show' : ''}`}>
+                <ul className={`dropdown-menu dropdown-menu-end ${isHovered ? 'show' : ''}`} onClick={closeMenu}>
                     {items.map((item, index) => (
                         <li key={index}><NavLink className="dropdown-item" to={item.path} onClick={closeMenu}>{item.label}</NavLink></li>
                     ))}
