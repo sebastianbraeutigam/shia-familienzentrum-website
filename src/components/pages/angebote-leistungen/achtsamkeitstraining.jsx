@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Telephone from '../../telephone';
 
 class Achtsamkeitstraining extends Component {
     state = {  } 
@@ -23,7 +24,7 @@ class Achtsamkeitstraining extends Component {
                     </p>
                     <p>
                         Klingt das spannend für euch? Dann ruft uns gerne an, um euch. Wir freuen uns auf euch! <br />
-                        <a className='teleNumber' href="tel:+493408826062"><strong>0340 882 60 62</strong></a>
+                        <Telephone />
                     </p>
 
                 </>;

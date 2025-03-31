@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Telephone from '../../telephone';
 
 class InformationsUndEntlastungsgespraeche extends Component {
     state = {  } 
@@ -15,7 +16,7 @@ class InformationsUndEntlastungsgespraeche extends Component {
                         Sie haben ein Anliegen, das über Erziehung hinausgeht? Wir sind für Sie da – ob Sie sich mit anderen familiären Themen beschäftigen oder einfach ein offenes Ohr suchen.
                     </p>
                     <p>
-                        Ruft uns gerne an: <a className='teleNumber' href="tel:+493408826062"><strong>0340 882 60 62</strong></a>.
+                        Ruft uns gerne an: <Telephone />
                     </p>
                 </>;
         

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Telephone from '../../telephone';
 
 class Familiencafe extends Component {
     state = {  } 
@@ -16,7 +17,7 @@ class Familiencafe extends Component {
                     </p>
                     <p>
                         Melden Sie sich gerne unter:  
-                        <a className='teleNumber' href="tel:+493408826062"><strong> 0340 882 60 62</strong></a>
+                        <Telephone />
                     </p>
                 </>;
     }
