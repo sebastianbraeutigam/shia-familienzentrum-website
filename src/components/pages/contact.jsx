@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './contact.css';
+import Telephone from '../telephone';
+import Mail from '../mail';
 
 class Contact extends Component {
     state = { 
@@ -33,8 +35,8 @@ class Contact extends Component {
                         <h5><strong>SHIA Familienzentrum</strong></h5>
                         <p>Wörlitzer Straße 69</p>
                         <p>06844 Dessau-Roßlau</p>
-                        <p className='telephone'>Telefon: <a href="tel:+493406616969">0340 661 69 69</a></p>
-                        <p className='email'>E-Mail: <a href="mailto:info@shia-dessau.de">info@shia-dessau.de</a></p> 
+                        <p className='telephone'><Telephone /></p>
+                        <p className='email'><Mail /></p> 
                     </div>
                     <div className="addressCard" ref={el => this.iframeContainer = el}>
                         {this.state.loadIframe ? (

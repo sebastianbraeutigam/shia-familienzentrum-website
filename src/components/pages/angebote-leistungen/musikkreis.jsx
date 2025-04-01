@@ -11,7 +11,7 @@ class Musikkreis extends Component {
                     </p>
                     <p>
                         Meldet euch gern unter: 
-                        <Telephone />
+                        &nbsp;<Telephone />
                     </p>
                 </>;
     }

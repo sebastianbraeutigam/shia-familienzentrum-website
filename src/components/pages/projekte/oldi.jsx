@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Telephone from '../../telephone';
 
 class Oldi extends Component {
     state = {  } 
@@ -27,7 +28,7 @@ class Oldi extends Component {
                         Dieses Projekt soll nicht allein Eltern entlasten, sondern eben auch übergreifende Qualitätszeit für Kinder, Eltern und (Leih-)Großeltern eröffnen.
                     </strong>
                     <p>
-                        Interessierte Wunsch-Omas/Opas, Eltern und Kinder können sich gern bei uns melden. <a className='teleNumber' href="tel:+493408826062"><strong>0340 882 60 62</strong></a>
+                        Interessierte Wunsch-Omas/Opas, Eltern und Kinder können sich gern bei uns melden. &nbsp; <Telephone />
                     </p>
                     <p>
                         Wir freuen uns auf Sie/Euch!

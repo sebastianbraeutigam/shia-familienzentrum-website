@@ -16,7 +16,7 @@ class Familiencafe extends Component {
                         Im Familiencafé findet ihr bestimmt Gemeinsamkeiten, frische Ideen und hilfreiche Ratschläge. Die gemeinsame Zeit kann euch helfen, entspannter mit euch selbst und euren (Enkel-)Kindern umzugehen. Eine Betreuung ist nicht vorgesehen, dafür gibt eine entspannte Atmosphäre bei Cafe & Kuchen, gemeinsames Spielen, (Basteln) und Lachen.
                     </p>
                     <p>
-                        Melden Sie sich gerne unter:  
+                        Melden Sie sich gerne unter: &nbsp;
                         <Telephone />
                     </p>
                 </>;

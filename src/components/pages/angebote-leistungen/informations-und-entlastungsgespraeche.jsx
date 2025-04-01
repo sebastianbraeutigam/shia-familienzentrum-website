@@ -16,7 +16,7 @@ class InformationsUndEntlastungsgespraeche extends Component {
                         Sie haben ein Anliegen, das über Erziehung hinausgeht? Wir sind für Sie da – ob Sie sich mit anderen familiären Themen beschäftigen oder einfach ein offenes Ohr suchen.
                     </p>
                     <p>
-                        Ruft uns gerne an: <Telephone />
+                        Ruft uns gerne an: &nbsp;<Telephone />
                     </p>
                 </>;
         
