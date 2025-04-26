@@ -37,7 +37,7 @@ class Contact extends Component {
                         <p>06844 Dessau-Roßlau</p>
                         <p className='telephone'><Telephone /></p>
                         <p className='email'><Mail /></p>
-                        <img src={`${process.env.PUBLIC_URL}/assets/img/front.jpg`} alt="Frontbild" className="contactimg" /> 
+                        <img src={`${process.env.PUBLIC_URL}/assets/img/front.JPG`} alt="Frontbild" className="contactimg" /> 
                     </div>
                     <div className="addressCard" ref={el => this.iframeContainer = el}>
                         {this.state.loadIframe ? (
