@@ -11,20 +11,25 @@
     min-height: 100vh;
 } 
 
+header {
+    max-height: 120px;
+}
+
+footer {
+    max-height: 170px;
+}
+
 header, 
 nav,
 footer, 
 footer > nav {
     background-color: #FCDC94;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 main {
     flex: 1;
     padding: 4vh 4vw;
     width: 75%;
-    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
