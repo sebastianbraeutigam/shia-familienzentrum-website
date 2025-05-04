@@ -1,48 +1,119 @@
-header {
-    margin-bottom: 5%;
-}
-
 .navbar {
-    padding-left: 3vw !important;
-    padding-right: 3vw !important;
-}
-
-nav a, 
-nav button, 
-footer p{
-    color: #EF9C66 !important; 
-}
-
-.dropdown-item:hover{
-    background-color: #EF9C66 !important;
-    color: white !important;
-}
-
-.dropdown-item.active{
-    background-color: #C8CFA0 !important;
-    color: white !important;
-}
-
-.imgTag {
-    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FCDC94;
+    padding: 10px 20px;
 }
 
 .navbar-brand img {
-    min-width: 100px;
-    max-width: 60%;
-    width: 250px;
-    padding-left: 0.5em;
-
+    height: auto;
+    width: 6vw;
+    max-width: 120px;
+    min-width: 50px; 
 }
 
-header .nav-link {
-    font-size: 1.2rem;
+.hamburger {
+    color: #EF9C66;
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-ul > li {
-    list-style-type: none;
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
-.navlink:hover {
+
+.nav-links.open {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #FCDC94;
+    padding: 10px 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #EF9C66;
+    font-size: 18px;
+}
+
+header .nav-link:focus,
+header .nav-link:hover,
+header .nav-link:active {
     text-decoration: underline;
+    color: #EF9C66;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    color: #EF9C66;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fefefe;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    text-decoration: none;
+    color: #EF9C66;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown-item.active {
+    color: #fefefe;
+    background-color: #EF9C66;
+    
+}
+
+.dropdown-item:hover {
+    color: #fefefe;
+    background-color: #FCDC94;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+    }
+}
