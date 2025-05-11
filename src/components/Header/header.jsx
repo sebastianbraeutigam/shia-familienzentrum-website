@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.css';
+import HamburgerIcon from './HamburgerIcon';
+import CloseIcon from './CloseIcon';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,8 +37,8 @@ const Header = () => {
                     <NavLink className="navbar-brand" to="/" onClick={closeMenu}>
                         <img src={`${process.env.PUBLIC_URL}/assets/img/logoshia.png`} alt="Shia Logo" />
                     </NavLink>
-                    <button className="hamburger" onClick={toggleMenu}>
-                        ☰
+                    <button className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                        {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
                     </button>
                     <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
                         <li>

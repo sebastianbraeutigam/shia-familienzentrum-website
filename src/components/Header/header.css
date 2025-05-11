@@ -14,12 +14,27 @@
 }
 
 .hamburger {
-    color: #EF9C66;
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
+    background-color: #FCDC94; 
+    border: none; 
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger svg {
+    background-color: #FCDC94; 
+    border: none; 
+    width: 24px; 
+    height: 24px; 
     cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: block; 
+}
+
+.hamburger.open svg {
+    transform: rotate(90deg); 
 }
 
 .nav-links {
@@ -115,5 +130,6 @@ header .nav-link:active {
     .dropdown-menu {
         position: static;
         box-shadow: none;
+        width: 98vw;
     }
 }
