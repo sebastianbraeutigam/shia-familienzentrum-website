@@ -7,7 +7,6 @@ import About from './components/pages/about';
 import Contact from './components/pages/contact';
 import Privacy from './components/pages/privacy';
 import Imprint from './components/pages/imprint';
-/* import Kinderyoga from './components/pages/angebote-leistungen/kinderyoga'; */
 import ElternKindGruppe from './components/pages/angebote-leistungen/eltern-kind-gruppe';
 import Spielgruppe from './components/pages/angebote-leistungen/spielgruppe';
 import Musikkreis from './components/pages/angebote-leistungen/musikkreis';
