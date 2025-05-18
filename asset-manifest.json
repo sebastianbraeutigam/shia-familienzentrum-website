@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/shia-familienzentrum-website/static/css/main.62142a7e.css",
-    "main.js": "/shia-familienzentrum-website/static/js/main.b4387d8a.js",
+    "main.js": "/shia-familienzentrum-website/static/js/main.295bb71f.js",
     "static/media/Modak-Regular.ttf": "/shia-familienzentrum-website/static/media/Modak-Regular.5e86e34ad9d1e27c58a2.ttf",
     "index.html": "/shia-familienzentrum-website/index.html",
     "main.62142a7e.css.map": "/shia-familienzentrum-website/static/css/main.62142a7e.css.map",
-    "main.b4387d8a.js.map": "/shia-familienzentrum-website/static/js/main.b4387d8a.js.map"
+    "main.295bb71f.js.map": "/shia-familienzentrum-website/static/js/main.295bb71f.js.map"
   },
   "entrypoints": [
     "static/css/main.62142a7e.css",
-    "static/js/main.b4387d8a.js"
+    "static/js/main.295bb71f.js"
   ]
 }
