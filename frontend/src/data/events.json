@@ -1,17 +1,6 @@
 [
     {
         "id": "1",
-        "event": "Yoga",
-        "page": "",
-        "schedule": [
-            {
-                "weekday": "Montag",
-                "time": "08:45 bis 09:30"
-            }
-        ]
-    },    
-    {
-        "id": "2",
         "event": "Spielgruppe",
         "page": "/angebote-leistungen/spielgruppe",
         "schedule": [
@@ -22,7 +11,7 @@
         ]
     },
     {
-        "id": "3",
+        "id": "2",
         "event": "Krabbelgruppe",
         "page": "",
         "schedule": [
@@ -37,7 +26,7 @@
         ]
     },
     {
-        "id": "4",
+        "id": "3",
         "event": "Familien-Cafe",
         "page": "/angebote-leistungen/familiencafe",
         "schedule": [
@@ -48,7 +37,7 @@
         ]
     },
     {
-        "id": "5",
+        "id": "4",
         "event": "Gemeinsames Kochen ab 2025",
         "page": "/angebote-leistungen/cooking",
         "schedule": [
@@ -58,7 +47,7 @@
         ]
     },
     {
-        "id": "6",
+        "id": "5",
         "event": "Musikgruppe Musimini",
         "page": "/angebote-leistungen/musikkreis",
         "schedule": [
@@ -69,13 +58,35 @@
         ]
     },
     {
-        "id": "7",
+        "id": "6",
         "event": "Musikgruppe",
         "page": "/angebote-leistungen/musikkreis",
         "schedule": [
             {
                 "weekday": "Freitag",
                 "time": "08:30 bis 09:30"
+            }
+        ]
+    }, 
+    {
+        "id": "7",
+        "event": "Sensorik Kurs",
+        "page": "",
+        "schedule": [
+            {
+                "weekday": "Freitag",
+                "time": "09:30"
+            }
+        ]
+    }, 
+    {
+        "id": "8",
+        "event": "Motorik Kurs",
+        "page": "",
+        "schedule": [
+            {
+                "weekday": "Montag",
+                "time": "09:00"
             }
         ]
     }
