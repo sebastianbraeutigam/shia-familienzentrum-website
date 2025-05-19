@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/shia-familienzentrum-website/static/css/main.4b5e8834.css",
-    "main.js": "/shia-familienzentrum-website/static/js/main.295bb71f.js",
+    "main.css": "/shia-familienzentrum-website/static/css/main.dec14311.css",
+    "main.js": "/shia-familienzentrum-website/static/js/main.924c928d.js",
     "static/media/Modak-Regular.ttf": "/shia-familienzentrum-website/static/media/Modak-Regular.5e86e34ad9d1e27c58a2.ttf",
+    "static/media/PoetsenOne-Regular.ttf": "/shia-familienzentrum-website/static/media/PoetsenOne-Regular.22ae511e03fc2ed8d264.ttf",
     "index.html": "/shia-familienzentrum-website/index.html",
-    "main.4b5e8834.css.map": "/shia-familienzentrum-website/static/css/main.4b5e8834.css.map",
-    "main.295bb71f.js.map": "/shia-familienzentrum-website/static/js/main.295bb71f.js.map"
+    "main.dec14311.css.map": "/shia-familienzentrum-website/static/css/main.dec14311.css.map",
+    "main.924c928d.js.map": "/shia-familienzentrum-website/static/js/main.924c928d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b5e8834.css",
-    "static/js/main.295bb71f.js"
+    "static/css/main.dec14311.css",
+    "static/js/main.924c928d.js"
   ]
 }
