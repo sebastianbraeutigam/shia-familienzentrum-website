@@ -1,3 +1,22 @@
+.shia-letter.s {
+    color: #6DE1D2
+}
+
+.shia-letter.h {
+    color: #FFD63A
+}
+
+.shia-letter.i {
+    color: #FFA955;
+}
+.shia-letter.a {
+    color: #F75A5A;
+}
+
+.shia-letter {
+    font-size: 4rem;
+}
+
 .link {
     color: #000; /* Schwarz */
     text-decoration: none; /* Optional: Entfernt die Unterstreichung */
