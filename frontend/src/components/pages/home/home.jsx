@@ -7,7 +7,14 @@ class Home extends Component {
     render() { 
         return (
             <>
-                <h1>SHIA Familienzentrum</h1>
+                <h1>
+                    <span className='shia-letter s'>S</span>
+                    <span className='shia-letter h'>H</span>
+                    <span className='shia-letter i'>I</span>
+                    <span className='shia-letter a'>A</span>
+                    <br />
+                    Familienzentrum
+                </h1>
                 <p className='introductionHome'>
                     <strong>Unterstützung, Information und Austausch für Familien</strong>
                 </p>

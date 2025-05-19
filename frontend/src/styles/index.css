@@ -1,6 +1,13 @@
 @font-face {
     font-family: 'Modak';
-    src: url('../../public/fonts/Modak/Modak-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/Modak/Modak-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PoetsenOne';
+    src: url('../assets/fonts/Poetsen_One/PoetsenOne-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -31,6 +38,7 @@ main {
 }
 
 main > h1 {
+    font-family: PoetsenOne, sans-serif;
     text-align: center;
     margin-bottom: 5%;
 }
