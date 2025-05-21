@@ -1,0 +1,40 @@
+# Node modules (Backend & Frontend)
+node_modules/
+**/node_modules/
+
+# Umgebungsvariablen (niemals hochladen!)
+.env
+.env.local
+.env.*.local
+
+# Prisma-Datenbank
+prisma/dev.db
+prisma/dev.db-journal
+
+# Prisma Client generiert
+prisma/migrations/
+prisma/.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Cache
+.cache/
+.vite/
+dist/
+build/
+
+# IDEs und Editor-Dateien
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-spezifisch
+.DS_Store
+Thumbs.db
+
+# Testing / Coverage
+coverage/
